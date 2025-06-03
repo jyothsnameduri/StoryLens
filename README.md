@@ -18,8 +18,9 @@ StoryLens is an AI-powered application that generates creative stories and poems
 
 2. Create a `.env` file with your OpenAI API key:
    ```
-   OPENAI_API_KEY=your_openai_api_key_here
+   OPENAI_API_KEY=your_actual_api_key_here
    ```
+   **IMPORTANT:** The `.env` file contains sensitive information and should never be committed to version control. The repository's `.gitignore` is configured to ignore this file.
 
 3. Run the application:
    ```
