@@ -1,0 +1,3 @@
+Please set your OpenAI API key to generate audio narration.
+
+Text: Please set your OpenAI API key in the .env file to generate unique stories from your images.
