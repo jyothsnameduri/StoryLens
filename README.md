@@ -1,43 +1,44 @@
-# StoryLens - Multi-modal Photo Story Generator
+# StoryLens
 
-StoryLens is an AI-powered application that generates creative stories and poems from your photos, with optional audio narration.
+Transform your images into compelling narratives with this AI-powered creative storytelling application.
 
-## Features
+## What It Does
 
-- Upload photos and get AI-generated stories or poems
-- Powered by OpenAI's GPT-4 Vision API for image understanding and story generation
-- Audio narration using OpenAI's Text-to-Speech API
-- Beautiful, user-friendly interface
+- Converts your uploaded images into unique stories and poetry
+- Uses advanced AI to analyze visual content and craft engaging narratives
+- Delivers audio versions of generated stories through text-to-speech technology
+- Features an intuitive and responsive user interface
 
-## Setup
+## Getting Started
 
-1. Install the required dependencies:
+1. Set up dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-2. Create a `.env` file with your OpenAI API key:
+2. Configure your API credentials:
    ```
+   # Create a file named .env with the following content
    OPENAI_API_KEY=your_actual_api_key_here
    ```
-   **IMPORTANT:** The `.env` file contains sensitive information and should never be committed to version control. The repository's `.gitignore` is configured to ignore this file.
+   **SECURITY NOTE:** Never commit your `.env` file to version control. This file has been added to `.gitignore` to prevent accidental exposure of your API key.
 
-3. Run the application:
+3. Launch the application:
    ```
    python app.py
    ```
 
-4. Open your browser and navigate to `http://localhost:5000`
+4. Access the web interface at `http://localhost:5000`
 
-## Technologies Used
+## Technology Stack
 
-- Flask (Backend)
-- OpenAI GPT-4 Vision API (Image Understanding & Story Generation)
-- OpenAI TTS API (Text-to-Speech)
-- HTML/CSS/JavaScript (Frontend)
+- **Backend Framework:** Flask
+- **Image Analysis & Text Generation:** OpenAI GPT-4 Vision API
+- **Voice Synthesis:** OpenAI TTS API
+- **Frontend:** HTML, CSS, and JavaScript
 
-## Note
+## Important Information
 
-This application requires an OpenAI API key to function properly. You will need to provide your own API key in the `.env` file. The application uses GPT-4 Vision for image analysis and story generation, and the TTS-1 model for audio narration.
+This project requires a valid OpenAI API key to function. You must supply your own key in the `.env` file as described above.
 
-This application requires significant computational resources for running the AI models. Consider using a machine with a GPU for optimal performance.
+The application leverages computationally intensive models - GPT-4 Vision for analyzing images and generating narratives, and TTS-1 for creating spoken audio. For best performance, running on hardware with GPU acceleration is recommended.
